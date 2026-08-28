@@ -33,7 +33,7 @@ class CalculateurPrixTest extends TestCase
     public function test_taxe_nulle_retourne_prix_identique(): void{
         $calculateur = new CalculateurPrix();
         $resultat = $calculateur->calculerAvecTaxe(100.00, 0);
-        $this->assertEquals(120.00, $resultat);
+        $this->assertEquals(100.00, $resultat);
     }
 
     public function test_calcul_taxe_negatif_exception(): void{
