@@ -22,11 +22,6 @@ jobs:
     runs-on: ubuntu-latest # runner GitHub-hosted
     steps:
       - name: Checkout du code # clone le dépôt
-      - name: Setup PHP
-      - name: Installer les dépendances
-      - name: Préparer le .env de test
-      - name: Lancer les tests
-      - name: Checkout du code # clone le dépôt
         uses: actions/checkout@v4
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
