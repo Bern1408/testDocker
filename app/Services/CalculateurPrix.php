@@ -57,4 +57,12 @@ class CalculateurPrix
 
         return $prix >= $seuilMinimum;
     }
+    public function calculerAvecTaxeTest(float $prixHT,float $tauxTaxe): float
+    {
+        if($tauxTaxe < 0 or $prixHT < 0){
+            throw new \InvalidArgumentException("Taux négatif.");
+        }
+
+        return round($prixHT * (1 + $tauxTaxe), 2);
+    }
 }

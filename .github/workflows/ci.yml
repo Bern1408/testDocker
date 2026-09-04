@@ -11,3 +11,5 @@ jobs:
         run: date
       - name: Afficher le répertoire de travail
         run: pwd
+      - name: Audit des dépendances
+        run: composer audit
